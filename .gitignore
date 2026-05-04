@@ -1,0 +1,27 @@
+# ---- .NET ----
+**/bin/
+**/obj/
+**/.vs/
+*.user
+
+# ---- Node / Vite ----
+node_modules/
+dist/
+.vite/
+
+# ---- Editor ----
+.vscode/
+.idea/
+
+# ---- Env / Secrets ----
+.env
+.env.local
+*.local
+appsettings.Development.json
+appsettings.*.local.json
+
+# ---- Logs ----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

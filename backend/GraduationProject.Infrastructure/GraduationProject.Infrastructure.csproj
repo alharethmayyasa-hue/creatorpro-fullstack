@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Logging\**" />
+    <Compile Remove="Persistence\Configuration\**" />
+    <EmbeddedResource Remove="Logging\**" />
+    <EmbeddedResource Remove="Persistence\Configuration\**" />
+    <None Remove="Logging\**" />
+    <None Remove="Persistence\Configuration\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GraduationProject.Application\GraduationProject.Application.csproj" />
+    <ProjectReference Include="..\GraduationProject.Domain\GraduationProject.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Stripe.net" Version="51.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Seeders\" />
+    <Folder Include="Seeders\" />
+  </ItemGroup>
+
+</Project>
