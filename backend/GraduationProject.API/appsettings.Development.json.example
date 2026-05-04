@@ -1,0 +1,10 @@
+{
+  "Jwt": {
+    "Key": "your-long-jwt-signing-key-32-chars-or-more"
+  },
+  "Stripe": {
+    "SecretKey": "<your-stripe-secret-key-here>",
+    "PublishableKey": "<your-stripe-publishable-key-here>",
+    "WebhookSecret": "<your-stripe-webhook-secret-here>"
+  }
+}
